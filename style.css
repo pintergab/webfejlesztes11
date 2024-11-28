@@ -1,0 +1,251 @@
+
+* {
+    box-sizing: border-box;
+	padding: 0px;
+    margin: 0px;
+	font-family: Roboto
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.container>* {
+    margin: 1%;
+			height: fit-content;
+}
+
+
+header {
+    padding: 70px 20px 20px 20px;
+    margin: 0px;
+    background-color: rgb(232, 232, 232);
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+article {
+    flex: 1 1 100%;
+    background-color: #ffffff;
+    padding: 0px 8px;
+    color: #292929;
+    text-align: justify;
+}
+
+article.content {
+    flex: 1 1 100%;
+}
+
+aside {
+    flex: 1 1 100%;
+    background-color: #cfcfcf;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.84em;
+}
+
+aside.ezpz {
+    flex: 1 1 100%;
+    font-size: 1.15em;
+}
+
+footer {
+    background-color: rgb(232, 232, 232);
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+
+
+nav {
+    padding: 8px;
+    flex: 1 1 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #a8a8a8;
+}
+
+
+img.contentkep {
+    height: auto;
+    float: right;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+h1 {
+	color: #f44336;
+}
+
+h2.title {
+    display: table;
+    text-align: left;
+}
+
+p.asd {
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+	color: #000;
+}
+p.tartalom {
+    padding: 3px;
+	padding-top: 15px
+}
+
+.active {
+	background-color: #e6e6e6!important;
+	color: #3b3b3b!important;
+}
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+    nav {
+        flex-basis: 23%;
+    }
+    article {
+        flex-basis: 73%;
+    }
+    aside.ezpz {
+        flex-basis: 100%;
+    }
+    article.content {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /*számítógép*/
+    nav {
+        flex-basis: 23%;
+    }
+    article {
+        flex-basis: 73%;
+    }
+    
+    aside.ezpz {
+        flex-basis: 23%;
+    }
+    article.content {
+        flex-basis: 73%;
+    }
+}
+
+
+
+
+
+
+
+.top,.bottom
+{
+	
+	width:100%;
+	
+}
+
+.top
+{
+	top:0
+}
+.bar
+{
+	width:100%;
+	
+}
+
+.center .bar
+{
+	
+	width:auto
+}
+
+.bar .bar-item
+{
+	padding:20px 3%;
+	float:left;
+	width:auto;
+	border:none;
+	display:block;
+	
+}
+.red,.hover-red:hover
+{
+	color:#fff;
+	background-color:#f44336
+}
+.card,.card-2
+{
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+.large
+{
+	font-size:18px
+}
+.left-align
+{
+	text-align:left
+}
+.bar-item
+{
+	width:100%;
+	display:block;
+	padding:20px 25px;
+	text-align:left;
+	border:none;
+	float:none;
+
+}
+.button
+{
+	border:none;
+	padding:8px 16px;
+	vertical-align:middle;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+}
+.button:hover
+{
+	color:#000;
+	background-color:#ccc
+}
+.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child
+{
+	background-color:#ccc;
+	color:#000
+}
